@@ -1,0 +1,7 @@
+SafeArea(
+	child: Widget(),
+	top: true,
+	bottom: true,
+	left: false,
+	right: true,
+)

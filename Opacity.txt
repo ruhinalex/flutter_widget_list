@@ -1,0 +1,14 @@
+Opacity(
+	opacity: 0.5,
+	child: Widget(),
+),
+
+
+// or
+AnimatedOpacity(
+	duration: _myDuration,
+	opacity: _myOpacity,
+	child: Widget(),
+)
+
+setState(()=> _myOpacity = 0.0);

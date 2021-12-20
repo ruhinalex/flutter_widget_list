@@ -1,0 +1,14 @@
+// Wrap is like row/column but if the children had not enough space it will be wrapped.
+
+Wrap(
+	direction: Axis.vertical,
+	alignment: WrapAlignment.end,
+	spacing: 10.0,
+	runSpacing: 16.0,
+	children: [
+		MyWidget(),
+		MyWidget(),
+		MyWidget(),
+		.....
+	],
+),

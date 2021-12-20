@@ -1,0 +1,18 @@
+FutureBuilder(
+	future: http.get('http://awesome.data'),
+	builder: (context, snapshot) {
+		// ConnectionState.none
+		// ConnectionState.waiting
+		// ConnectionState.active
+		// ConnectionState.done
+
+		if(snapshot.connectionState == ConnectionState.done){
+			if(snapshot.hasError){
+				return SomethingWentWrong();
+			}
+			return AwesomeData(snapshot.data);
+		}else{
+			return CircularProgressIndicator();
+		}
+	}
+)

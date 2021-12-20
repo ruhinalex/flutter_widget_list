@@ -1,0 +1,6 @@
+// inside row and column we can use Expended widget
+
+Expended(
+	flex: 1,
+	child: Widget(),
+)
